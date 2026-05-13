@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(0.15 0.02 270);
+  --foreground: oklch(0.96 0.01 90);
+  --card: oklch(0.19 0.025 270);
+  --card-foreground: oklch(0.96 0.01 90);
+  --primary: oklch(0.82 0.13 85);
+  --primary-foreground: oklch(0.16 0.02 270);
+  --secondary: oklch(0.24 0.025 270);
+  --muted: oklch(0.22 0.022 270);
+  --muted-foreground: oklch(0.72 0.02 90);
+  --accent: oklch(0.82 0.13 85);
+  --destructive: oklch(0.6 0.2 25);
+  --destructive-foreground: oklch(0.98 0.005 90);
+  --border: oklch(0.32 0.025 270);
+  --input: oklch(0.28 0.022 270);
+  --ring: oklch(0.82 0.13 85);
+  --gradient-hero: radial-gradient(ellipse at top, oklch(0.3 0.08 85 / 0.35), transparent 60%);
+  --shadow-glow: 0 0 50px oklch(0.82 0.13 85 / 0.3);
+  --shadow-elegant: 0 25px 70px -20px oklch(0 0 0 / 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  border-color: var(--border);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utility classes using CSS variables */
+.bg-background { background-color: var(--background); }
+.bg-card { background-color: var(--card); }
+.bg-primary { background-color: var(--primary); }
+.bg-input { background-color: var(--input); }
+.text-foreground { color: var(--foreground); }
+.text-primary { color: var(--primary); }
+.text-muted-foreground { color: var(--muted-foreground); }
+.text-destructive { color: var(--destructive); }
+.text-primary-foreground { color: var(--primary-foreground); }
+.border-border { border-color: var(--border); }
+.border-primary { border-color: var(--primary); }
+.border-destructive { border-color: var(--destructive); }
+.shadow-glow { box-shadow: var(--shadow-glow); }
+.shadow-elegant { box-shadow: var(--shadow-elegant); }
+
+details summary { list-style: none; }
+details summary::-webkit-details-marker { display: none; }
+details.group[open] .group-open\:rotate-180 { transform: rotate(180deg); }
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
