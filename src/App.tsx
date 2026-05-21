@@ -11,7 +11,6 @@ import {
   CheckCircle2,
   Loader2,
 } from "lucide-react";
-import dashboardImg from "@/assets/dashboard.jpg";
 import aiChatImg from "@/assets/ai-chat.jpg";
 import phonesImg from "@/assets/phones-analytics.jpg";
 import foundersImg from "@/assets/juan.jpg";
@@ -263,8 +262,14 @@ export default function App() {
           <p style={{ marginTop: "16px", fontSize: "14px", color: "var(--muted-foreground)" }}>
             🛡️ Garantía de 5 citas en 30 días — o el siguiente mes es gratis. Sin letra pequeña.
           </p>
-          <div style={{ marginTop: "64px", maxWidth: "768px", margin: "64px auto 0", borderRadius: "12px", overflow: "hidden", border: "1px solid var(--border)", boxShadow: "var(--shadow-elegant)" }}>
-            <img src={dashboardImg} alt="Panel de control del agente IA para clínicas estéticas - automatización de citas y CRM" style={{ width: "100%", display: "block" }} />
+          <div style={{ marginTop: "64px", maxWidth: "768px", margin: "64px auto 0", borderRadius: "12px", overflow: "hidden", border: "1px solid var(--border)", boxShadow: "var(--shadow-elegant)", position: "relative", paddingBottom: "56.25%", height: 0 }}>
+            <iframe
+              src="https://www.youtube.com/embed/jTSkgh1vQrw"
+              title="Clinvert IA — Agente IA para clínicas estéticas que cotiza, agenda y llena tu CRM 24/7"
+              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>
